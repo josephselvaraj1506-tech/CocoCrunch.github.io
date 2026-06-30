@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Travelling & Spiritual Journey</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f6f2;
+    color:#333;
+    line-height:1.8;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#3f6d5a;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#4CAF50;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn{
+    background:#4CAF50;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2f7c45;
+}
+
+/* Sections */
+
+section{
+    padding:90px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#3f6d5a;
+    margin-bottom:45px;
+    font-size:36px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#3f6d5a;
+    margin-bottom:15px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* Quote */
+
+.quote{
+    background:#3f6d5a;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.quote h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.quote p{
+    font-size:24px;
+    font-style:italic;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    background:#2b4b3d;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🌿 Soul Journey
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#travel">Travel</a></li>
+<li><a href="#meditation">Meditation</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#blog">Reflections</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>My Travelling & Spiritual Journey</h1>
+
+<p>
+Exploring the world, discovering myself, and embracing inner peace—one destination and one meditation at a time.
+</p>
+
+<a href="#about" class="btn">Begin the Journey</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="container about">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80">
+
+<div>
+
+<p>
+
+Hello! I'm a solo traveller and meditation practitioner who believes every journey is both outward and inward.
+
+Travel allows me to experience diverse cultures, while meditation teaches me to appreciate the beauty of stillness.
+
+Every mountain climbed, every temple visited, and every sunrise witnessed becomes another lesson in gratitude and mindfulness.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="travel">
+
+<h2>Solo Travel Adventures</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🏔 Mountains</h3>
+
+<p>
+Finding peace while hiking through breathtaking landscapes and discovering nature's silent wisdom.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏝 Islands</h3>
+
+<p>
+Learning to slow down beside turquoise waters and appreciating life's simple moments.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏯 Ancient Temples</h3>
+
+<p>
+Exploring sacred places that inspire mindfulness, history, and spiritual reflection.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="meditation">
+
+<h2>Meditation Journey</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Morning Meditation</h3>
+
+<p>
+Beginning each day with gratitude, breathing exercises, and mindful awareness.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Vipassana Practice</h3>
+
+<p>
+Learning to observe reality as it is through silence, patience, and equanimity.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mindful Living</h3>
+
+<p>
+Bringing meditation beyond the cushion into every conversation, meal, and journey.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Journey Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section id="blog">
+
+<h2>Reflections</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Every Journey Begins Within</h3>
+
+<p>
+The further I travelled, the more I realised the greatest destination was understanding myself.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>The Beauty of Solitude</h3>
+
+<p>
+Travelling alone taught me confidence. Meditation taught me contentment.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Presence Over Perfection</h3>
+
+<p>
+Life becomes meaningful when we experience each moment fully rather than chasing perfection.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<h2>My Favourite Quote</h2>
+
+<p>
+
+"The journey isn't about escaping life. It's about awakening to it."
+
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Let's Connect</h2>
+
+<p>Email: hello@yoursouljourney.com</p>
+
+<p>Instagram: @yoursouljourney</p>
+
+<p>Thank you for being part of this beautiful journey.</p>
+
+</section>
+
+<footer>
+
+© 2026 My Travelling & Spiritual Journey | Travel • Meditation • Mindfulness
+
+</footer>
+
+</body>
+</html>
